@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Movies</title>
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    @vite('resources/sass/app.sass')
 </head>
 <body>
     <div class="container mt-4">
@@ -18,6 +18,7 @@
                             <p class="card-text"><strong>Nationality:</strong> {{ $movie->nationality }}</p>
                             <p class="card-text"><strong>Date:</strong> {{ $movie->date }}</p>
                             <p class="card-text"><strong>Vote:</strong> {{ $movie->vote }}</p>
+                            <p class="card-text">{{ $movie->description }}</p>
                         </div>
                     </div>
                 </div>
